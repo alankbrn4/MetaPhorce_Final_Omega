@@ -8,12 +8,21 @@
 		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+<<<<<<< HEAD
 	<groupId>com.labclinico</groupId>
 	<artifactId>omega</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>omega</name>
 	<description>Demo project for clinic laboratory to manage information</description>
+=======
+	<groupId>com.omega</groupId>
+	<artifactId>omega-microservices</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>omega-microservices</name>
+	<description>Lab Clinic Microservices</description>
+>>>>>>> 7102f9342314cd10ec8e9c9bc770a9d19f94612e
 	<url/>
 	<licenses>
 		<license/>
@@ -30,6 +39,7 @@
 	<properties>
 		<java.version>21</java.version>
 	</properties>
+<<<<<<< HEAD
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,11 +52,26 @@
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+=======
+
+	<modules>
+		<module>patient-service</module>
+		<module>doctor-service</module>
+		<module>appointment-service</module>
+		<module>inventory-service</module>
+		<module>test-result-service</module>
+	</modules>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+>>>>>>> 7102f9342314cd10ec8e9c9bc770a9d19f94612e
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+<<<<<<< HEAD
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
@@ -63,6 +88,8 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+=======
+>>>>>>> 7102f9342314cd10ec8e9c9bc770a9d19f94612e
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
@@ -71,6 +98,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		
 		
 
@@ -111,6 +139,8 @@
 		</dependency>
 
 
+=======
+>>>>>>> 7102f9342314cd10ec8e9c9bc770a9d19f94612e
 	</dependencies>
 
 	<build>
@@ -118,6 +148,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+<<<<<<< HEAD
 				
 			</plugin>
 			<plugin>
@@ -128,6 +159,9 @@
               		<failOnMissingWebXml>false</failOnMissingWebXml>
           		</configuration>
       		</plugin>
+=======
+			</plugin>
+>>>>>>> 7102f9342314cd10ec8e9c9bc770a9d19f94612e
 		</plugins>
 	</build>
 
