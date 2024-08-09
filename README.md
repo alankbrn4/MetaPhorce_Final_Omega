@@ -37,11 +37,11 @@ docker build -t omega-lab:latest .
 docker run -d -p 8080:8080 omega-lab:latest
 ```
 
-## ** Swagger UI**
+## **Swagger UI**
 
 Accede a Swagger UI en http://localhost:8080/swagger-ui.html.
 
-## ** Licencia**
+## **Licencia**
 Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
 
 ## **Contribuciones**
