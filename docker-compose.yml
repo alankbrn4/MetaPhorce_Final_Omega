@@ -5,7 +5,7 @@ services:
   mysql:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: Wv9FXroi47
+      MYSQL_ROOT_PASSWORD: TU_PASSWORD
       MYSQL_DATABASE: omega
     ports:
       - "3307:3306"
@@ -26,5 +26,5 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/omega
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: Wv9FXroi47
+      SPRING_DATASOURCE_PASSWORD: TU_PASSWORD
       SPRING_DATA_MONGODB_URI: mongodb://mongodb:27017/labclinico
