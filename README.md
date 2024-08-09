@@ -1,57 +1,72 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 # Final Project JAVA Back End Microservices - MetaPhorce
 
 # LabClinico Omega - Documentación de la API
 
+# Omega - Sistema de Gestión para Laboratorio Clínico
+
 ## Descripción
 
-Este proyecto es un sistema de gestión para un laboratorio clínico que incluye módulos para gestionar pacientes, médicos, citas, muestras y análisis. La API RESTful está desarrollada utilizando Spring Boot y proporciona un conjunto completo de servicios para la gestión de estos módulos.
+Omega es un sistema diseñado para la gestión de información en un laboratorio clínico. Proporciona capacidades de almacenamiento, consulta y manejo de datos tanto en bases de datos relacionales como no relacionales.
+
+Este proyecto incluye módulos para gestionar pacientes, médicos, citas, inventarios, muestras y análisis. La API RESTful está desarrollada utilizando Spring Boot y proporciona un conjunto completo de servicios para la gestión de estos módulos.
+
+## **Requisitos**
+
+- **Java 21**
+- **Maven 3.8.1 o superior**
+- **Docker** (opcional)
 
 ## Requisitos Previos
 
-- Java 11 o superior
-- Maven
 - MySQL
 - MongoDB
+  
+## **Instalación**
 
-## Configuración
-
-### Clonar el Repositorio
+### **1. Clonar el Repositorio**
 
 ```bash
-git clone https://github.com/tu_usuario/labclinico-omega.git
-cd labclinico-omega
+git clone https://github.com/alankbrn4/MetaPhorce_Final_Omega.git
+cd MetaPhorce_Final_Omega-master
 ```
 
-## Configurar la Base de Datos MySQL
+### **2. Configurar la Base de Datos MySQL
 
 ###Crear una base de datos en MySQL:
 
 - CREATE DATABASE labclinico;
 - Configurar las credenciales de la base de datos en src/main/resources/application.properties:
 
-### Estructura de Archivo properties
+### 3. Estructura de Archivo properties
 ```bash
 spring.datasource.url=jdbc:mysql://localhost:3306/labclinico
 spring.datasource.username=tu_usuario
 spring.datasource.password=tu_contraseña
 spring.jpa.hibernate.ddl-auto=update
 ```
-### Configurar MongoDB
+### 4. Configurar MongoDB
 
 Asegúrate de que MongoDB esté ejecutándose en tu máquina local y configurado en el puerto por defecto (27017).
 
-## Compilar y Ejecutar la Aplicación
+### 5. Compilar 
 ```bash
 mvn clean install
+```
+### 6. Ejecutar la Aplicación
+
+* Ejecición Local
+  
+```bash
 mvn spring-boot:run
 ```
 
-## Documentación de la API con Swagger
+* Despliegue en Docker:
+```sh
+docker build -t omega-lab:latest .
+docker run -d -p 8080:8080 omega-lab:latest
+```
 
-- Acceder a Swagger UI
+## **Swagger UI**
 - Una vez que la aplicación esté en ejecución, puedes acceder a Swagger UI en la siguiente URL:
 
 ```bash
@@ -326,66 +341,13 @@ json
 - Endpoint: DELETE /api/analisis/{id}
 
 
-# Contribuciones
-
-Si deseas contribuir a este proyecto, por favor abre un issue o envía un pull request.
-
-# Licencia
+## **Licencia**
 
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
-=======
-# MetaPhorce_Final_Omega
->>>>>>> 6ebdec54bc6b01a4c2625cd40ac8eb2be0c923e3
-=======
-# MetaPhorce_Final_Omega
-
-# Omega - Sistema de Gestión para Laboratorio Clínico
-
-Omega es un sistema diseñado para la gestión de información en un laboratorio clínico. Proporciona capacidades de almacenamiento, consulta y manejo de datos tanto en bases de datos relacionales como no relacionales.
-
-## **Requisitos**
-
-- **Java 21**
-- **Maven 3.8.1 o superior**
-- **Docker** (opcional)
-
-## **Instalación**
-
-### **1. Clonar el Repositorio**
-
-```sh
-git clone https://github.com/tu_usuario/omega.git
-cd omega
-```
-### **2. Configuración**
-Configura el archivo src/main/resources/application.properties con las credenciales y URLs de tus bases de datos.
-
-### **3. Construir el Proyecto**
-```sh
-mvn clean install
-```
-
-### **4. Ejecución**
-* Ejecición Local
-```sh
-mvn spring-boot:run
-```
-* Despliegue en Docker:
-```sh
-docker build -t omega-lab:latest .
-docker run -d -p 8080:8080 omega-lab:latest
-```
-
-## **Swagger UI**
-
-Accede a Swagger UI en http://localhost:8080/swagger-ui.html.
-
-## **Licencia**
-Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
 
 ## **Contribuciones**
 Las contribuciones son bienvenidas. Por favor, sigue las directrices del proyecto para contribuir.
 
 ## **Contacto**
 Para preguntas o soporte, contacta a Alan Blanco en ablancom@utleon.edu.mx.
->>>>>>> 7102f9342314cd10ec8e9c9bc770a9d19f94612e
+
